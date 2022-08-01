@@ -1,0 +1,651 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* INICIO DO BANNER */
+
+#banner{
+    background-image: url('../img/fundo.jpg');
+    background-position: center;
+    background-size: cover;
+    height: calc(100vh);
+}
+.banner{
+    height: calc(100vh);
+    background-color: #00000095;
+}
+
+header{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 50px;
+}
+
+.logo{
+    color: rgb(245, 9, 9);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.idioma select{
+    margin: 0px 25px;
+    background-color: transparent;
+    padding: 8px 22px;
+    color: #fff;
+    font-size: 16px;
+    border: solid 1px #fff;
+    border-radius: 3px;
+}
+
+.idioma input{
+    padding: 7px 17px;
+    background-color: red;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 15px;
+}
+
+.idioma select option{
+    background-color: #ccc;
+}
+
+#card--text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: calc(100% - 80px);
+    color: #fff;
+    
+}
+.card-text{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 640px;
+}
+
+.card-title{
+    margin-bottom: 15px;
+    
+}
+.card-title h1{
+    font-size: 50px;
+}
+
+.card-subtitle{
+    margin-bottom: 25px;
+}
+
+.card-subtitle h2{
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.card-info{
+    margin-bottom: 15px;
+}
+
+.card-info p{
+    font-size: 18px;
+}
+
+#form{
+    width: 590px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-text form input{
+    width: 420px;
+    height: 60px;
+    background-color: #fff;
+    padding: 10px;
+    border: none;
+}
+
+.card-text form input:focus{
+    box-shadow: none;
+    outline: 0;
+}
+
+.card-text form button{
+    width: 170px;
+    height: 60px;
+   background-color: #e20813;
+   border: none;
+   cursor: pointer;
+   color: #fff;
+   font-size: 26px;
+}
+/* FIM DO BANNER */
+
+/* INICIO DAS SESSÕES */
+
+.line{
+    height: 8px;
+    background-color: #222222;
+    width: 100%;
+}
+
+#card-sections{
+    height: 470px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.card-container{
+    display: flex;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 50px;
+}
+
+.card-one{
+    max-width: 100%;
+    height: auto;
+}
+
+.card-one h1{
+    font-size: 50px;
+}
+
+.card-one{
+    margin: 10px;
+}
+
+.card-subtitle p{
+    font-size: 26px;
+    width: auto;
+}
+
+.card-two img{
+    max-width: 600px;
+    height: auto;
+}
+
+/* FIM DAS SESSOES */
+
+/* INICIO DAS PERGUNTAS FRENQUENTES */
+
+#card-questions{
+    height: auto;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.container-questions{
+    height: auto;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 90px;
+}
+
+.container-questions h1{
+   margin-top: 50px;
+   margin-bottom: 30px;
+   font-size: 50px;
+}
+
+details {
+    display: block; 
+    width: auto;
+    margin: 5px 0;
+}
+  
+details p { 
+    padding-left: 30px;
+    height: auto;
+    background-color: #303030;
+    margin: 1px;
+    font-size:30px;
+    align-items: center;
+    padding: 35px;
+}
+
+  
+summary {
+    height: 80px;
+    width: 900px;
+    display: flex; 
+    background-color: #303030;
+    color: #fff;
+    padding: 0px 45px;
+    cursor: pointer;
+    font-size: 30px;
+    justify-content: flex-start;
+    align-items: center;
+}
+  
+
+  
+summary:before {
+     
+     font-size: 20px;
+     font-weight: bold;
+     margin: 0 5px;
+     padding: 0;
+     width: 20px;
+     text-align: center;
+     display: flex;
+     justify-content: flex-end;
+}
+  
+
+#footer{
+    height: auto;
+    display: flex;
+    background-color: #000;
+    color: #757575;
+    justify-content: center;
+}
+
+.footer{
+    width: 800px;
+}
+
+.footer-title p{
+    margin-top: 80px;
+    margin-bottom: 35px;
+    color: #757575;
+    font-size: 16px;
+    padding: 0px 9px;
+}
+
+.footer-title p a{
+    color: #757575;
+    list-style: none;
+    text-decoration: none;
+}
+
+.footer-title p a:hover{
+    text-decoration: underline;
+}
+
+.footer-desc{
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    color: #757575;
+}
+
+.footer-desc .desc{
+    flex: 1;
+}
+
+.desc ul{
+    list-style: none;
+    text-decoration: none;
+}
+
+.desc li{
+    margin: 10px;
+}
+
+.desc li a{
+    text-decoration: none;
+    color: #757575;
+}
+
+.desc li a:hover{
+    text-decoration: underline;
+}
+
+.footer-idioma{
+    margin-top: 20px;
+    margin-bottom: 80px;
+    display: block;
+    border: #222222;
+}
+
+.footer-span{
+    margin-bottom: 150px;
+    font-size: 14px;
+    padding: 0px 10px;
+}
+
+.netbrasil{
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 667px){
+
+    
+    /* HEADER */ 
+
+    header{
+    padding: 25px 25px;
+    }
+
+    header .logo{
+        font-size: 20px;
+    }
+    
+    .idioma select{
+        padding: 6px 12px;
+        margin: 0px 15px;
+        font-size: 12px;
+    }
+
+    .idioma input{
+        padding: 7px 10px;
+        font-size: 12px;
+    }
+
+    .card-container{
+        flex-direction: column;
+        margin-top: 18px;
+    }
+
+    .card-one{
+        width: auto;
+        text-align: center;
+        height: 200px;
+    }
+
+    .card-title h1{
+        
+    }
+
+    .card-subtitle p{
+        font-size: 20px;
+    }
+
+    .card-two img{
+        max-width: calc(50vw);
+    }
+
+    .card-title, .card-subtitle, .card-info{
+      
+        font-size: 15px;
+    }
+
+    .card-text{
+        width: 320px;
+    }
+
+    #form{
+        width: 320px;
+    }
+
+    .card-text {
+        font-size: 28px;
+    }
+
+    .card-subtitle h2{
+        font-size: 20px;
+    }
+
+    .card-info p{
+        font-size: 18px;
+    }
+    
+    #form{
+        flex-direction: column;
+        height: 110px;
+    }
+
+    #form input{
+        width: calc(90vw);;
+        height: 50px;
+        border-radius: 2px;
+        margin-bottom: 15px;
+    }
+
+    #form button{
+        height: 40px;
+        font-size: 16px;
+        width: 115px;
+    }
+
+    .container-questions h1{
+        font-size: 30px;
+    }
+
+    .container-questions li{
+        width: 320px;
+    }
+
+    .container-questions li input, .container-questions li p ion-icon{
+        font-size: 12px;
+    }
+
+    .footer-desc{
+        flex-wrap: wrap;
+    }
+    
+    summary{
+        font-size: 20px;
+        max-width: calc(90vw);
+    }
+
+    details p{
+        font-size: 10px;
+        max-width: calc(90vw);
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    summary{
+        font-size: 20px;
+        max-width: calc(90vw);
+    }
+
+    details p{
+        font-size: 10px;
+        max-width: calc(90vw);
+    }
+
+    .card-text .card-title h1{
+        font-size: 45px;
+    }
+    #form{
+        flex-direction: column;
+        height: 110px;
+    }
+
+    #form input{
+        width: calc(90vw);;
+        height: 60px;
+        border-radius: 2px;
+        margin-bottom: 15px;
+    }
+
+    #form button{
+        height: 40px;
+        font-size: 16px;
+        width: 115px;
+    }
+
+    .card-container{
+        flex-direction: column;
+    }
+
+    .card-one{
+        text-align: center;
+    }
+
+    .card-title h1{
+        font-size: 35px;
+    }
+
+    .card-subtitle p{
+        font-size: 20px;
+        max-width: calc(600px);
+    }
+    .card-two img{
+        max-width: calc(50vw);
+    }
+
+    .container-questions li{
+        width: calc(95vw);
+    }
+
+    .container-questions li input, .container-questions li p ion-icon{
+        font-size: 16px;
+    }
+}
+
+/*
+@media only screen and (max-width: 992px){
+
+    summary{
+        font-size: 20px;
+        max-width: calc(90vw);
+    }
+
+    details p{
+        font-size: 10px;
+        max-width: calc(90vw);
+    }
+
+    .container-questions li{
+        width: calc(65vw);
+    }
+
+    .container-questions li input, .container-questions li p ion-icon{
+        font-size: 12px
+    }
+
+}
+*/
+
+@media screen and (max-width: 964px){
+
+    
+    /* HEADER */ 
+
+    header{
+    padding: 25px 25px;
+    }
+
+    header .logo{
+        font-size: 20px;
+    }
+    
+    .idioma select{
+        padding: 6px 12px;
+        margin: 0px 15px;
+        font-size: 12px;
+    }
+
+    .idioma input{
+        padding: 7px 10px;
+        font-size: 12px;
+    }
+
+    .card-container{
+        flex-direction: column;
+        margin-top: 18px;
+    }
+
+    .card-one{
+        width: auto;
+        text-align: center;
+        height: 200px;
+    }
+
+    .card-subtitle p{
+        font-size: 17px;
+    }
+
+    .card-two img{
+        max-width: calc(40vw);
+    }
+
+    .card-title, .card-subtitle, .card-info{
+        max-width: calc(90vw);
+    }
+
+    .card-text{
+        width: 320px;
+    }
+
+    #card-sections{
+        height: 500px;
+       
+    }
+
+    #form{
+        width: 320px;
+    }
+
+    .card-text .card-title h1{
+        font-size: 28px;
+    }
+
+    .card-subtitle h2{
+        font-size: 20px;
+    }
+
+    .card-info p{
+        font-size: 18px;
+    }
+    
+    #form{
+        flex-direction: column;
+        height: 110px;
+    }
+
+    #form input{
+        width: calc(90vw);;
+        height: 50px;
+        border-radius: 2px;
+        margin-bottom: 15px;
+    }
+
+    #form button{
+        height: 40px;
+        font-size: 16px;
+        width: 115px;
+    }
+
+    .container-questions h1{
+        font-size: 30px;
+    }
+
+    .container-questions li{
+        width: 320px;
+    }
+
+    .container-questions li input, .container-questions li p ion-icon{
+        font-size: 12px;
+    }
+
+    .footer-desc{
+        flex-wrap: wrap;
+    }
+    
+    summary{
+        font-size: 20px;
+        max-width: calc(90vw);
+    }
+
+    details p{
+        font-size: 10px;
+        max-width: calc(90vw);
+    }
+}
